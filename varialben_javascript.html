@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<hi>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JavaScript let iables.</h3>
+    <p>1) In diesem Beispiel, x, y, und z sind die let viables mit "let" Schlüsselwort.
+<p id="demo"></p>
+   <script>
+       let x = 15;
+       let y = 14;
+       let z = x + y;
+       document.getElementById("demo").innerHTML = "The value of z is: " + z;  
+     </script>
+
+ <p>2) In diesem Beispiel sind Variablen, die mit dem "var" Schlüsselwort</p>
+<p id="demo1"></p>
+    <script>
+        var numKids  = 5;
+        var partner  = 'David Beckham';
+        var geoLocation = 'Costa Rica';
+        var jobTitle = 'web developer';
+
+        var future = 'You will be a ' + jobTitle + ' in ' + geoLocation + ', and married to ' +
+        partner + ' ' + ' with ' + numKids + ' kids.';
+
+        document.getElementById("demo1").innerHTML = 'You will be a ' + jobTitle + ' in ' + geoLocation + ', and married to ' +
+        partner + ' ' + ' with ' + numKids + ' kids.';  
+           
+         </script>
+         <p>3) For a general rule: always declare variables with const.</p>
+         <p id="demo2"></p>
+         <script>
+             const price1 = 10;
+             const price2 = 20;
+             let total = price1 + price2;
+             document.getElementById("demo2").innerHTML="The total is: " + total;
+         </script>
+         <p>4) The assigment operator += can concatenate string.</p>
+         <p id="demo3"></p>
+         <script>
+             let text1 = "What a very ";
+             text1 += "nice day!";
+             document.getElementById("demo3").innerHTML = text1;
+         </script>
+
+         <h2>JavaScript Comparison</h2>
+         <p>Input your age and click the button:</p>         
+         <input id="age" value="18" />         
+         <button onclick="myFunction()">Try it</button>         
+         <p id="demo4"></p>     
+         <script>
+         function myFunction() {
+           let age = document.getElementById("age").value;
+           let voteable = (age < 18) ? "Too young":"Old enough";
+           document.getElementById("demo4").innerHTML = voteable + " to vote.";
+         }
+         </script>
+         <h2>JavaScript new Date()</h2>
+
+         <p id="demo5"></p>
+         
+         <script>
+         const d = new Date();
+         document.getElementById("demo5").innerHTML = d;
+         </script>
+         
+
+</body>
+</html>
