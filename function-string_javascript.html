@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript: Stings</h1>
+    <h3>a function called DrEvil</h3>
+    <p id="demo"></p>
+    <script>
+        function drEvil(amount) {
+            if (amount == 1000000) {
+              return amount + " dollars (pinky)";
+            } else {
+              return amount + " dollars";
+            }
+          }
+          alert(drEvil(1000000));
+          
+    </script>
+
+    <h3>mixUp</h3>
+<p id="demo1"></p>
+<script>
+    function mixUp(a, b) {
+  return b.slice(0, 2) + a.slice(2) + " " + a.slice(0, 2) + b.slice(2);
+}
+</script>
+
+<h3>function "notBad"</h3>
+<script>
+   function notBad(sentence) {
+  var notIndex = sentence.indexOf('not');
+  var badIndex = sentence.indexOf('bad');
+  if (notIndex == -1 || badIndex == -1 || badIndex < notIndex) return sentence;
+  return sentence.slice(0, notIndex) + 'good' + sentence.slice(badIndex + 3);
+} 
+</script>
+</body>
+</html>
