@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Add Number</p>
+    <p id="demo"></p>
+    <script>
+        // This is a function:
+        function addNumber(a,b) {
+            return a + b;
+        }
+        addNumber(2,4);
+        console.log(addNumber(2,4));
+    </script>
+    <script>
+         // This is arrow function:
+         const addNumbers = (a,b) => {
+                return a + b;
+            }
+
+            addNumbers(2,4);
+            console.log(addNumbers(2,4));
+        </script>
+         <p id="demo2"></p>
+         <script>
+             // arrow function with min. two parameter:
+             const multiplyNumbers = (a, b) => {
+                 return a * b;
+             }
+
+             multiplyNumbers(2,4);
+             console.log(multiplyNumbers(2,4));
+
+         </script>
+          <script>
+            // arrow function without parameters:
+            const horn = () => {
+                console.log('tru-to-tru!');
+            }
+
+            horn();
+
+        </script>
+
+        <script>
+            // arrow function with one  parameter:
+            const square1 = (x) => {
+                return x * x;
+            }
+
+            square1(5);
+            console.log(square1(5));
+
+        </script>
+      
+<p id="demo"></p>
+
+<script>
+let myFunction = (a, b) => a * b;
+document.getElementById("demo").innerHTML = myFunction(4, 5);
+</script>
+       <script>
+           const calculateDogAge = (age) => {
+               let Age = 3*age;
+    
+    console.log("Your doggie is " + Age + " years old in dog years!");
+}
+
+    calculateDogAge(1);
+    calculateDogAge(0.5);
+    calculateDogAge(3);
+       </script>
+</body>
+</html>
