@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Städte, die weniger als drei Millionen Einwohner haben</title>
+</head>
+<body>
+   <h1>JavaScript Arrays</h1>
+   <h3>The filter() Method</h3>
+   <p>Click "Test to get every element in array that has a value about this nummer:</p>
+
+<p id="demo"></p>
+
+<script>
+
+const number = [3792621, 8175133, 2695598, 2099451, 1526006];
+
+document.getElementById("demo").innerHTML = number.filter(checkAdult);
+
+function checkAdult(num) {
+  return num < 3000000;
+}
+</script>
+
+
+<script>
+    
+        // Seu list of city objects.
+        console.log("Innen");
+        let cities = [
+            {name: "Los Angeles", population: 3792621},
+            {name: "New York", population: 8175133},
+            {name: "Chicago", population: 2695598},
+            {name: "Houston", population: 2099451},
+            {name: "Philadelphia", population: 1526006}
+        ];
+        // Copy the big Cities with MORE thet 3 million inhabitanta into a new list.
+        let bigCities = cities.filter((city) => city.population < 3000000);
+
+        console.log("Big Cities", bigCities);
+        
+
+    
+    /*document.getElementById("demo1").innerHTML = stadt.filter(checkAdult);
+
+function checkAdult(num) {
+  return num < 3000000;
+}
+    var numAnwohner = stadt.filter(function(num) {
+        return numb.anwohner = "3000000";
+    });*/
+</script>
+</body>
+</html>
